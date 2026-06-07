@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Sign in</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+YQ4/6H6Y5b1r2l0yQFh3jFQ1YkQm5Q5Y5o1Jg1l5Y5r5Q5s5G5Y5"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: linear-gradient(120deg, #f7f9ff, #eef6ff);
+        font-family:
+          Inter,
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial;
+      }
+      .card {
+        border: 0;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(22, 45, 80, 0.08);
+      }
+      .brand {
+        font-weight: 700;
+        letter-spacing: -0.5px;
+      }
+      .social-btn {
+        width: 100%;
+      }
+      .divider {
+        text-align: center;
+        margin: 1rem 0;
+        color: #8b9bb2;
+      }
+      .illustration {
+        background: linear-gradient(135deg, #6fb7ff 0%, #a18bff 100%);
+        height: 100%;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+        color: white;
+        padding: 2rem;
+      }
+      @media (max-width: 767px) {
+        .illustration {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="card overflow-hidden">
+            <div class="row no-gutters">
+              <div
+                class="col-md-5 illustration d-flex flex-column justify-content-center"
+              >
+                <div class="px-4">
+                  <h2 class="brand">PSU Sphere</h2>
+                  <p class="lead">
+                    Welcome back — sign in to continue to your dashboard.
+                  </p>
+                  <p><i class="fa-solid fa-lock fa-2x"></i></p>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="p-4">
+                  <h4 class="mb-1">Sign in</h4>
+                  <p class="text-muted">
+                    Use your email and password or continue with a social
+                    account.
+                  </p>
+
+                  <div class="mb-3">
+                    <button class="btn btn-outline-secondary social-btn mb-2">
+                      <i class="fab fa-google mr-2"></i> Continue with Google
+                    </button>
+                    <button class="btn btn-outline-secondary social-btn">
+                      <i class="fab fa-github mr-2"></i> Continue with GitHub
+                    </button>
+                  </div>
+
+                  <div class="divider">OR</div>
+
+                  <form>
+                    <div class="form-group">
+                      <label>Email</label>
+                      <input
+                        class="form-control form-control-lg"
+                        placeholder="you@example.edu"
+                        type="email"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label>Password</label>
+                      <input
+                        class="form-control form-control-lg"
+                        placeholder="••••••••"
+                        type="password"
+                      />
+                    </div>
+                    <div class="form-row align-items-center mb-3">
+                      <div class="col-auto">
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="remember"
+                          />
+                          <label class="custom-control-label" for="remember"
+                            >Remember me</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col text-right">
+                        <a href="#">Forgot password?</a>
+                      </div>
+                    </div>
+                    <button
+                      class="btn btn-primary btn-lg btn-block"
+                      type="submit"
+                    >
+                      Sign in
+                    </button>
+                  </form>
+
+                  <hr />
+                  <p class="mb-0">
+                    Don't have an account? <a href="signup.html">Create one</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

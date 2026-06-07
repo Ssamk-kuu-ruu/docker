@@ -1,0 +1,108 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="container-fluid">
+  <h4 class="page-title">Home</h4>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">Student Organizations</div>
+          <p class="card-category">
+            Showing all registered organizations within the PSUSphere system.
+          </p>
+        </div>
+        <div class="card-body">
+          <div class="row mb-3">
+            <div class="col-md-3 col-sm-6">
+              <div class="card card-stats card-warning">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="icon-big text-center">
+                        <i class="la la-users"></i>
+                      </div>
+                    </div>
+                    <div class="col-7 d-flex align-items-center">
+                      <div class="numbers">
+                        <p class="card-category">Students</p>
+                        <h4 class="card-title">{{ total_students }}</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="card card-stats card-success">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="icon-big text-center">
+                        <i class="la la-bar-chart"></i>
+                      </div>
+                    </div>
+                    <div class="col-7 d-flex align-items-center">
+                      <div class="numbers">
+                        <p class="card-category">Sales</p>
+                        <p class="card-category">Joined This Year</p>
+                        <h4 class="card-title">
+                          {{ students_joined_this_year }}
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="card card-stats card-danger">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="icon-big text-center">
+                        <i class="la la-newspaper-o"></i>
+                      </div>
+                    </div>
+                    <div class="col-7 d-flex align-items-center">
+                      <div class="numbers">
+                        <p class="card-category">Organizations</p>
+                        <h4 class="card-title">{{ total_organizations }}</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="card card-stats card-primary">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="icon-big text-center">
+                        <i class="la la-check-circle"></i>
+                      </div>
+                    </div>
+                    <div class="col-7 d-flex align-items-center">
+                      <div class="numbers">
+                        <p class="card-category">Programs</p>
+                        <h4 class="card-title">{{ total_programs }}</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Page Title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Page Subtitle</h6>
+              <p class="card-text">Hello, World</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
